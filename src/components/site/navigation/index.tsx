@@ -15,7 +15,7 @@ const Navigation = (props: Props) => {
           width={40}
           height={40}
         />
-        <span className="text-xl font-bold">MultiLevel</span>
+        <span className="text-xl font-bold">Pearls</span>
       </aside>
       <nav className="hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]">
         <ul className="flex items-center justify-center gap-8">
