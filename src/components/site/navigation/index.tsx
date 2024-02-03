@@ -1,4 +1,5 @@
 import { ModeToggle } from "@/components/global/mode-toggle";
+import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,7 +8,7 @@ type Props = {};
 
 const Navigation = (props: Props) => {
   return (
-    <div className="p-4 flex items-center justify-between relative">
+    <div className="fixed top-0 right-0 left-0 p-4 flex items-center justify-between z-10">
       <aside className="flex items-center gap-2">
         <Image
           src={"./assets/plura-logo.svg"}
@@ -32,6 +33,7 @@ const Navigation = (props: Props) => {
         >
           Login
         </Link>
+        <UserButton />
         <ModeToggle />
       </aside>
     </div>
